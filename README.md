@@ -15,6 +15,7 @@ The product we have created, EventMask, is a great way to get people to register
 EventMask aims to help Dao and other web3 communities to manage and organize offline events.
 
 ## Getting Started!!
+https://youtube.com/playlist?list=PLF0mjbey-ZsSJre-ZmmW0ct8nlJ6WGUV2
 
 1. Organizer create event ‘Christmas party’
   - Create with discord scheduled event feature
