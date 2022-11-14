@@ -1,5 +1,4 @@
 from PIL import Image, ImageFont, ImageDraw
-
 import os
 
 ##file path
@@ -29,16 +28,14 @@ def centered_text_to_image(base_img, text, font_path, font_size, font_color, hei
 
 
 def nftDemoImageGenerator(
+    event_attendee,
     event_name,
     dao_name,
     event_date,
     base_img_path,
     medium_font_path,
     creepster_font_path,
-    # cop_output,
 ):
-
-    event_attendee = "si"
 
     # line1
     base_img = centered_text_to_image(
@@ -80,19 +77,6 @@ def nftDemoImageGenerator(
         275,  # middle pixel would be 175
     )
 
-    # new_dir_path = ".\image\output\{}".format(event_name)
-    # # new_dir_path = os.path.join(cop_output, event_name)
-    # os.mkdir(new_dir_path)
-    base_img.save(r"path")
-
-
-nftDemoImageGenerator(
-    "Christmas party",
-    "Global DAO",
-    "2022-12-25",
-    #####future######
-    base_img_path=r"image/base/certificate01.png",
-    medium_font_path=r"font/Open_Sans/static/OpenSans/OpenSans-Medium.ttf",
-    creepster_font_path=r"font/Creepster/Creepster-Regular.ttf",
-    #################
-)
+    first_path = os.path.join("./image/output/", event_name)
+    os.makedirs(first_path, exist_ok=True)
+    base_img.save(os.path.join(os.path.join(first_path, "cop.png")))

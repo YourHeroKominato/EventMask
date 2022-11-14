@@ -66,6 +66,7 @@ async def helpcommand(interaction: discord.Interaction):
 )
 async def confirmnft(interaction: discord.Interaction):
 
+    eventattendee = interaction.user.name
     Channel = interaction.channel
     Guild = interaction.guild
     daoName = interaction.guild
@@ -101,6 +102,8 @@ async def confirmnft(interaction: discord.Interaction):
             isPrivateEventChannel = True
             organaizerName = event["creator"]
 
+    eventdate = eventStartDate[:9]
+
     ev = (
         "?organaizerName="
         + str(organaizerName)
@@ -120,6 +123,7 @@ async def confirmnft(interaction: discord.Interaction):
 
     ### main function
     nftDemoImageGenerator.nftDemoImageGenerator(
+        eventattendee,
         eventName,
         daoName,
         eventStartDate[:9],
@@ -128,10 +132,9 @@ async def confirmnft(interaction: discord.Interaction):
         medium_font_path=r"font/Open_Sans/static/OpenSans/OpenSans-Medium.ttf",
         creepster_font_path=r"font/Creepster/Creepster-Regular.ttf",
         #################
-        # cop_output="image/output/{}".format(eventName),
     )
 
-    file = discord.File(r"path")
+    file = discord.File("image/output/{}/cop.png".format(eventName))
     embed = discord.Embed(title="{}_NFT".format(eventName), color=discord.Colour.red())
     embed.set_image(url="attachment://{}_NFT.png".format(eventName))
 
