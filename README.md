@@ -1,5 +1,11 @@
 # Eventmask
 
+## link
+Here is a landing page for EventMask.
+https://hero-komi-web3.my.canva.site/eventmask
+
+You can contact @hero_komi_web3 via twitter for any inquiries
+
 ## Background
 Web3 community has been organizing more and more offline events lately!
 Especially for operating Dao, offline events have become an important part of community.
