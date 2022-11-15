@@ -4,7 +4,8 @@
 Here is a landing page for EventMask.
 https://hero-komi-web3.my.canva.site/eventmask
 
-You can contact @hero_komi_web3 via twitter for any inquiries
+You can contact @hero_komi_web3 for any inquiries regarding this project.
+https://twitter.com/hero_komi_web3
 
 ## Background
 Web3 community has been organizing more and more offline events lately!
