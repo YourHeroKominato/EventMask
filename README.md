@@ -1,6 +1,6 @@
 # Eventmask
 
-## link
+## Link
 Here is a landing page for EventMask.
 https://hero-komi-web3.my.canva.site/eventmask
 
